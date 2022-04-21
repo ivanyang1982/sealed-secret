@@ -18,11 +18,11 @@ jobs:
       - name: Set up Go
         uses: actions/setup-go@v2
         with:
-          go-version: 1.15
+          go-version: 1.17.8
       - name: Setup kubecfg
         run: |
           mkdir -p ~/bin
-          curl -sLf https://github.com/bitnami/kubecfg/releases/download/v0.16.0/kubecfg-linux-amd64 >~/bin/kubecfg
+          curl -sLf https://github.com/bitnami/kubecfg/releases/download/v0.25.0/kubecfg-linux-X64 >~/bin/kubecfg
           chmod +x ~/bin/kubecfg
 
       # Run tests
